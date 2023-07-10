@@ -1,6 +1,6 @@
 Flask<3.0
 marshmallow-jsonapi
-mongoengine==0.26.0
+mongoengine==0.27.0
 sweetrpg-api-core
 sweetrpg-db
 sweetrpg-model-core
