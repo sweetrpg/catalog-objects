@@ -19,6 +19,8 @@ class PersonDocument(Document):
         "strict": False,
     }
 
+    source_id = fields.StringField()
+
     # basic properties
     name = fields.StringField(min_length=1, max_length=200, required=True)
     properties = fields.ListField(fields.EmbeddedDocumentField(PropertyDocument))

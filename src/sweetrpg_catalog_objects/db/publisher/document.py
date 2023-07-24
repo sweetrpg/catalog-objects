@@ -21,6 +21,8 @@ class PublisherDocument(Document):
         "strict": False,
     }
 
+    source_id = fields.StringField()
+
     # basic properties
     name = fields.StringField(min_length=1, max_length=200, required=True)
     tags = fields.ListField(fields.EmbeddedDocumentField(TagDocument))

@@ -21,6 +21,8 @@ class LicenseDocument(Document):
         "strict": False,
     }
 
+    source_id = fields.StringField()
+
     # basic properties
     title = fields.StringField(required=True)
     description = fields.StringField(required=True)

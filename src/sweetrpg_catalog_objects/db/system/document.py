@@ -20,6 +20,8 @@ class SystemDocument(Document):
         "strict": False,
     }
 
+    source_id = fields.StringField()
+
     # basic properties
     game_system = fields.StringField(required=True)
     edition = fields.StringField(required=True)

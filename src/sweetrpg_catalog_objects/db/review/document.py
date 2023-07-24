@@ -20,6 +20,8 @@ class ReviewDocument(Document):
         "strict": False,
     }
 
+    source_id = fields.StringField()
+
     # basic properties
     title = fields.StringField(required=True)
     body = fields.StringField(required=True)

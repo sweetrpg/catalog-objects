@@ -21,6 +21,8 @@ class ContributionDocument(Document):
         "strict": False,
     }
 
+    source_id = fields.StringField()
+
     # basic properties
     roles = fields.ListField(fields.StringField(required=True), required=True)
 
