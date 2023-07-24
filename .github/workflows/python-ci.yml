@@ -97,12 +97,13 @@ jobs:
             fail-fast: false
             matrix:
                 include:
-                    - repo: library-api
-                    - repo: web-core
+                    - repo: catalog-api
+                    - repo: catalog-data-processor
+                    - repo: catalog-web
                     - repo: client
-                    - repo: library-web
                     - repo: main-web
                     - repo: shared-web
+                    - repo: web-core
         steps:
             - uses: juztcode/repo-ditpatch-action@v1
               with:
