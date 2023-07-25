@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
+Schema for Volume data.
 """
 
 from marshmallow import fields
