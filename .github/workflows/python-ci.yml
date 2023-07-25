@@ -82,10 +82,10 @@ jobs:
             - uses: actions/checkout@v2
               with:
                   fetch-depth: 0
-            - name: publish
+            - name: Publish
               uses: python-semantic-release/python-semantic-release@master
               with:
-                  additional_options: "--patch"
+                  additional_options: "--patch -vv"
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   repository_username: __token__
                   repository_password: ${{ secrets.PYPI_TOKEN }}
@@ -105,7 +105,8 @@ jobs:
                     - repo: shared-web
                     - repo: web-core
         steps:
-            - uses: juztcode/repo-ditpatch-action@v1
+            - name: Notify
+              uses: juztcode/repo-ditpatch-action@v1
               with:
                   event-type: catalog-objects-published
                   token: ${{ secrets.REPO_ACCESS_TOKEN }}
