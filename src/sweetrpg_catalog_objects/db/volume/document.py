@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
+Volume document for MongoDB.
 """
 
 from datetime import datetime
@@ -10,7 +11,9 @@ from sweetrpg_catalog_objects.db.embedded.tag.document import TagDocument
 
 
 class VolumeDocument(Document):
-    """A mapping object to convert MongoDB data to a Volume object."""
+    """
+    A mapping object to convert MongoDB data to a Volume object.
+    """
 
     meta = {
         "indexes": [
