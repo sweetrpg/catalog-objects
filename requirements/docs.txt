@@ -135,7 +135,7 @@ sweetrpg-db==0.0.137
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
-sweetrpg-model-core==0.0.136
+sweetrpg-model-core==0.0.138
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
