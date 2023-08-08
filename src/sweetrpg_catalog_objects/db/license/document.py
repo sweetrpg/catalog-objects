@@ -25,8 +25,16 @@ class LicenseDocument(Document):
 
     # basic properties
     title = fields.StringField(required=True)
-    description = fields.StringField(required=True)
-    body = fields.StringField(required=True)
+    short_title = fields.StringField(required=True)
+    version = fields.StringField()
+    deed = fields.StringField()
+    legal_code = fields.StringField()
+    url = fields.StringField()
+    status = fields.StringField(required=True)
+    availability = fields.StringField(required=True)
+    release_date = fields.DateField()
+    revocation_date = fields.DateField()
+    notes = fields.StringField()
     properties = fields.ListField(fields.EmbeddedDocumentField(PropertyDocument))
     tags = fields.ListField(fields.EmbeddedDocumentField(TagDocument))
     volumes = fields.ListField(fields.ReferenceField("VolumeDocument"))
