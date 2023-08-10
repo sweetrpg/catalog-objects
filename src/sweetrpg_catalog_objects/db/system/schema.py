@@ -12,5 +12,5 @@ class SystemSchema(BaseSchema):
     model_class = System
 
     game_system = fields.String(required=True)  # , load_only=True)
-    edition = fields.String(required=True)  # , load_only=True)
+    title = fields.String(required=True)  # , load_only=True)
     tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))

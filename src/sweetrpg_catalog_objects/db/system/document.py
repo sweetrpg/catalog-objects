@@ -13,7 +13,8 @@ class SystemDocument(Document):
 
     meta = {
         "indexes": [
-            {"name": "game_system_edition", "fields": ["game_system", "edition"], "unique": True},
+            # {"name": "game_system_edition", "fields": ["game_system", "edition"], "unique": True},
+            {"name": "game_system", "fields": ["game_system"], "unique": True},
         ],
         "db_alias": "default",
         "collection": "systems",
@@ -24,7 +25,7 @@ class SystemDocument(Document):
 
     # basic properties
     game_system = fields.StringField(required=True)
-    edition = fields.StringField(required=True)
+    title = fields.StringField(required=True)
     tags = fields.ListField(fields.EmbeddedDocumentField(TagDocument))
 
     # relations
