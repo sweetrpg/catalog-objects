@@ -25,6 +25,8 @@ class StudioDocument(Document):
 
     # basic properties
     name = fields.StringField(min_length=1, max_length=200, required=True)
+    website = fields.StringField()
+    notes = fields.StringField()
     tags = fields.ListField(fields.EmbeddedDocumentField(TagDocument))
     properties = fields.ListField(fields.EmbeddedDocumentField(PropertyDocument))
 

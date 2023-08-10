@@ -12,5 +12,7 @@ class StudioSchema(BaseSchema):
     model_class = Studio
 
     name = fields.String(required=True)  # , load_only=True)
+    website = fields.String()
+    notes = fields.String()
     tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
     properties = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
