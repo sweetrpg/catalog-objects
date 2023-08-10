@@ -1,2 +1,4 @@
 # -*- coding: utf-8 -*-
-"""SweetRPG Library Model test package initialisation."""
+"""
+SweetRPG Library Model test package initialisation.
+"""
