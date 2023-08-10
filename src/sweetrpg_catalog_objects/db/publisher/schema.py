@@ -12,5 +12,8 @@ class PublisherSchema(BaseSchema):
     model_class = Publisher
 
     name = fields.String(required=True)  # , load_only=True)
+    address = fields.String()
+    website = fields.String()
+    notes = fields.String()
     tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
     properties = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))

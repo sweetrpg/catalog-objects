@@ -20,5 +20,8 @@ class Publisher(Model):
         super().__init__(*args, **kwargs)
 
         self.name = kwargs.get("name")
+        self.address = kwargs.get("address")
+        self.website = kwargs.get("website")
+        self.notes = kwargs.get("notes")
         self.tags = kwargs.get("tags")
         self.properties = kwargs.get("properties")
