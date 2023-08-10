@@ -11,7 +11,6 @@ system_json = """
 {
     "_id": "this-is-ignored",
     "game_system": "dnd",
-    "edition": "5",
     "created_at": "2021-09-13T07:55:00.001",
     "created_by": "test",
     "updated_at": "2021-09-13T07:55:00.001",
@@ -30,7 +29,6 @@ def test_system_from_json():
     assert isinstance(s, System)
     assert s.id == "this-is-ignored"
     assert s.game_system == "dnd"
-    assert s.edition == "5"
     assert s.created_at == system_datetime
     assert s.created_by == "test"
     assert s.updated_at == system_datetime
