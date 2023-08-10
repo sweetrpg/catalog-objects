@@ -16,7 +16,7 @@ def test_volume_document_setup():
     p = PublisherDocument(name="Pub Lisher")
     pr = PropertyDocument(name="value", value="1", kind="int")
     st = StudioDocument(name="Studio")
-    s = SystemDocument(game_system="dnd", edition="5")
+    s = SystemDocument(game_system="dnd")
     v = VolumeDocument(
         title="Bob's Book",
         description="Descriptive",
