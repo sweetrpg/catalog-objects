@@ -25,7 +25,8 @@ class SystemDocument(Document):
 
     # basic properties
     game_system = fields.StringField(required=True)
-    title = fields.StringField(required=True)
+    name = fields.StringField(required=True)
+    edition = fields.StringField(required=True)
     tags = fields.ListField(fields.EmbeddedDocumentField(TagDocument))
 
     # relations

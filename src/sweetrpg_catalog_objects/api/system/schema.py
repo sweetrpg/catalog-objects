@@ -19,5 +19,6 @@ class SystemAPISchema(BaseAPISchema):
         self_view_many = "system_list"
 
     game_system = fields.String(required=True)  # , load_only=True)
-    title = fields.String(required=True)
+    name = fields.String(required=True)
+    edition = fields.String(required=True)
     tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
