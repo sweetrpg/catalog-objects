@@ -31,7 +31,7 @@ docutils==0.18.1
     #   rstcheck-core
     #   sphinx
     #   sphinx-tabs
-flask==2.3.2
+flask==2.3.3
     # via
     #   -r requirements/pkg.in
     #   flask-rest-jsonapi
