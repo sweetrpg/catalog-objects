@@ -225,7 +225,7 @@ tomli==2.0.1
     #   pyproject-hooks
     #   pytest
     #   tox
-tox==4.9.0
+tox==4.10.0
     # via -r requirements/tests.in
 typer[all]==0.7.0
     # via rstcheck
