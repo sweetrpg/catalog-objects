@@ -8,7 +8,7 @@ from sweetrpg_catalog_objects.model.embedded.property import Property
 from sweetrpg_model_core.schema.base import BaseEmbeddedSchema
 
 
-class AuthorPropertySchema(BaseEmbeddedSchema):
+class PropertySchema(BaseEmbeddedSchema):
     model_class = Property
 
     name = fields.String(required=True)  # , load_only=True)
