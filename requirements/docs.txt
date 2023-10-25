@@ -33,7 +33,7 @@ docutils==0.18.1
     #   sphinx-tabs
 flask==2.3.3
     # via
-    #   -r requirements/pkg.in
+    #   -r pkg.in
     #   flask-rest-jsonapi
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
@@ -64,13 +64,13 @@ marshmallow==3.20.1
     #   sweetrpg-model-core
 marshmallow-jsonapi==0.24.0
     # via
-    #   -r requirements/pkg.in
+    #   -r pkg.in
     #   flask-rest-jsonapi
 mdurl==0.1.2
     # via markdown-it-py
 mongoengine==0.27.0
     # via
-    #   -r requirements/pkg.in
+    #   -r pkg.in
     #   sweetrpg-api-core
     #   sweetrpg-db
 packaging==23.2
@@ -79,7 +79,7 @@ packaging==23.2
     #   pallets-sphinx-themes
     #   sphinx
 pallets-sphinx-themes==2.1.1
-    # via -r requirements/docs.in
+    # via -r docs.in
 pydantic==2.4.2
     # via rstcheck-core
 pydantic-core==2.10.1
@@ -99,7 +99,7 @@ requests==2.31.0
 rich==13.6.0
     # via typer
 rstcheck==6.2.0
-    # via -r requirements/docs.in
+    # via -r docs.in
 rstcheck-core==1.1.1
     # via rstcheck
 shellingham==1.5.3
@@ -110,7 +110,7 @@ snowballstemmer==2.2.0
     # via sphinx
 sphinx==7.2.6
     # via
-    #   -r requirements/docs.in
+    #   -r docs.in
     #   pallets-sphinx-themes
     #   sphinx-issues
     #   sphinx-tabs
@@ -121,9 +121,9 @@ sphinx==7.2.6
     #   sphinxcontrib-qthelp
     #   sphinxcontrib-serializinghtml
 sphinx-issues==3.0.1
-    # via -r requirements/docs.in
+    # via -r docs.in
 sphinx-tabs==3.4.1
-    # via -r requirements/docs.in
+    # via -r docs.in
 sphinxcontrib-applehelp==1.0.7
     # via sphinx
 sphinxcontrib-devhelp==1.0.5
@@ -133,7 +133,7 @@ sphinxcontrib-htmlhelp==2.0.4
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
 sphinxcontrib-log-cabinet==1.0.1
-    # via -r requirements/docs.in
+    # via -r docs.in
 sphinxcontrib-qthelp==1.0.6
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.9
@@ -141,20 +141,18 @@ sphinxcontrib-serializinghtml==1.1.9
 sqlalchemy==2.0.22
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.227
-    # via -r requirements/pkg.in
+    # via -r pkg.in
 sweetrpg-db==0.0.137
     # via
-    #   -r requirements/pkg.in
+    #   -r pkg.in
     #   sweetrpg-api-core
 sweetrpg-model-core==0.0.153
     # via
-    #   -r requirements/pkg.in
+    #   -r pkg.in
     #   sweetrpg-api-core
     #   sweetrpg-db
 typer[all]==0.9.0
-    # via
-    #   rstcheck
-    #   typer
+    # via rstcheck
 typing-extensions==4.8.0
     # via
     #   pydantic
@@ -163,5 +161,5 @@ typing-extensions==4.8.0
     #   typer
 urllib3==2.0.7
     # via requests
-werkzeug==3.0.0
+werkzeug==3.0.1
     # via flask
