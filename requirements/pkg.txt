@@ -19,7 +19,7 @@ flask==2.3.3
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
-greenlet==3.0.0
+greenlet==3.0.1
     # via sqlalchemy
 itsdangerous==2.1.2
     # via flask
@@ -68,5 +68,5 @@ sweetrpg-model-core==0.0.153
     #   sweetrpg-db
 typing-extensions==4.8.0
     # via sqlalchemy
-werkzeug==3.0.0
+werkzeug==3.0.1
     # via flask
