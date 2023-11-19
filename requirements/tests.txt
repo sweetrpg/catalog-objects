@@ -99,7 +99,7 @@ pytest==7.4.3
     #   pytest-ordering
 pytest-cov==4.1.0
     # via -r requirements/tests.in
-pytest-env==0.8.2
+pytest-env==1.1.1
     # via -r requirements/tests.in
 pytest-ordering==0.6
     # via -r requirements/tests.in
@@ -125,6 +125,7 @@ tomli==2.0.1
     #   coverage
     #   pyproject-api
     #   pytest
+    #   pytest-env
     #   tox
 tox==4.11.3
     # via -r requirements/tests.in
