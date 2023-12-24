@@ -38,7 +38,7 @@ flask==2.3.3
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
-greenlet==3.0.2
+greenlet==3.0.3
     # via sqlalchemy
 idna==3.6
     # via requests
@@ -80,9 +80,9 @@ packaging==23.2
     #   sphinx
 pallets-sphinx-themes==2.1.1
     # via -r requirements/docs.in
-pydantic==2.5.2
+pydantic==2.5.3
     # via rstcheck-core
-pydantic-core==2.14.5
+pydantic-core==2.14.6
     # via pydantic
 pygments==2.17.2
     # via
