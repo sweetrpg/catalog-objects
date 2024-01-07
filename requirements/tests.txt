@@ -91,7 +91,7 @@ pymongo[srv]==4.6.1
     #   sweetrpg-model-core
 pyproject-api==1.6.1
     # via tox
-pytest==7.4.3
+pytest==7.4.4
     # via
     #   -r requirements/tests.in
     #   pytest-cov
@@ -107,7 +107,7 @@ python-dotenv==1.0.0
     # via -r requirements/tests.in
 six==1.16.0
     # via flask-rest-jsonapi
-sqlalchemy==2.0.24
+sqlalchemy==2.0.25
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.247
     # via -r requirements/pkg.in
