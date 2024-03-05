@@ -55,7 +55,7 @@ markupsafe==2.1.5
     # via
     #   jinja2
     #   werkzeug
-marshmallow==3.21.0
+marshmallow==3.21.1
     # via
     #   flask-rest-jsonapi
     #   marshmallow-jsonapi
@@ -65,7 +65,7 @@ marshmallow-jsonapi==0.24.0
     # via
     #   -r requirements/pkg.in
     #   flask-rest-jsonapi
-mongoengine==0.28.0
+mongoengine==0.28.1
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -107,7 +107,7 @@ python-dotenv==1.0.1
     # via -r requirements/tests.in
 six==1.16.0
     # via flask-rest-jsonapi
-sqlalchemy==2.0.27
+sqlalchemy==2.0.28
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.265
     # via -r requirements/pkg.in
@@ -115,7 +115,7 @@ sweetrpg-db==0.0.137
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
-sweetrpg-model-core==0.0.153
+sweetrpg-model-core==0.0.154
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
