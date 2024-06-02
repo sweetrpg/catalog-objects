@@ -12,7 +12,7 @@ babel==2.15.0
     # via sphinx
 blinker==1.8.2
     # via flask
-certifi==2024.2.2
+certifi==2024.6.2
     # via requests
 charset-normalizer==3.3.2
     # via requests
@@ -133,7 +133,7 @@ sphinxcontrib-serializinghtml==1.1.10
     # via sphinx
 sqlalchemy==2.0.30
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.290
+sweetrpg-api-core==0.0.292
     # via -r requirements/pkg.in
 sweetrpg-db==0.0.137
     # via
