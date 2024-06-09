@@ -54,7 +54,7 @@ markupsafe==2.1.5
     # via
     #   jinja2
     #   werkzeug
-marshmallow==3.21.2
+marshmallow==3.21.3
     # via
     #   flask-rest-jsonapi
     #   marshmallow-jsonapi
@@ -78,16 +78,16 @@ packaging==24.0
     #   sphinx
 pallets-sphinx-themes==2.1.3
     # via -r requirements/docs.in
-pydantic==2.7.2
+pydantic==2.7.3
     # via rstcheck-core
-pydantic-core==2.18.3
+pydantic-core==2.18.4
     # via pydantic
 pygments==2.18.0
     # via
     #   rich
     #   sphinx
     #   sphinx-tabs
-pymongo[srv]==4.7.2
+pymongo[srv]==4.7.3
     # via
     #   mongoengine
     #   sweetrpg-db
@@ -148,7 +148,7 @@ tomli==2.0.1
     # via sphinx
 typer[all]==0.12.3
     # via rstcheck
-typing-extensions==4.12.1
+typing-extensions==4.12.2
     # via
     #   pydantic
     #   pydantic-core
