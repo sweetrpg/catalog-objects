@@ -32,7 +32,7 @@ dnspython==2.6.1
     #   sweetrpg-db
 exceptiongroup==1.2.2
     # via pytest
-filelock==3.16.0
+filelock==3.16.1
     # via
     #   tox
     #   virtualenv
@@ -43,7 +43,7 @@ flask==2.3.3
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
-greenlet==3.1.0
+greenlet==3.1.1
     # via sqlalchemy
 iniconfig==2.0.0
     # via pytest
@@ -65,7 +65,7 @@ marshmallow-jsonapi==0.24.0
     # via
     #   -r requirements/pkg.in
     #   flask-rest-jsonapi
-mongoengine==0.29.0
+mongoengine==0.29.1
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -76,7 +76,7 @@ packaging==24.1
     #   pyproject-api
     #   pytest
     #   tox
-platformdirs==4.3.3
+platformdirs==4.3.6
     # via
     #   tox
     #   virtualenv
@@ -84,12 +84,12 @@ pluggy==1.5.0
     # via
     #   pytest
     #   tox
-pymongo[srv]==4.8.0
+pymongo[srv]==4.9.1
     # via
     #   mongoengine
     #   sweetrpg-db
     #   sweetrpg-model-core
-pyproject-api==1.7.1
+pyproject-api==1.8.0
     # via tox
 pytest==7.4.4
     # via
@@ -107,7 +107,7 @@ python-dotenv==1.0.1
     # via -r requirements/tests.in
 six==1.16.0
     # via flask-rest-jsonapi
-sqlalchemy==2.0.34
+sqlalchemy==2.0.35
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.322
     # via -r requirements/pkg.in
@@ -126,13 +126,13 @@ tomli==2.0.1
     #   pyproject-api
     #   pytest
     #   tox
-tox==4.18.1
+tox==4.20.0
     # via -r requirements/tests.in
 typing-extensions==4.12.2
     # via
     #   asgiref
     #   sqlalchemy
-virtualenv==20.26.4
+virtualenv==20.26.5
     # via tox
 werkzeug==3.0.4
     # via flask
