@@ -4,7 +4,7 @@ from setuptools import setup
 setup(
     name="sweetrpg-catalog-objects",
     install_requires=[
-        "Flask~=2.0",
+        "Flask~=3.0",
         "marshmallow-jsonapi~=0.24",
         "mongoengine~=0.27",
         "sweetrpg-api-core",
