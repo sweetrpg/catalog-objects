@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements/dev.in
 #
-alabaster==0.7.16
+alabaster==1.0.0
     # via sphinx
 annotated-types==0.7.0
     # via pydantic
@@ -12,7 +12,7 @@ asgiref==3.8.1
     # via -r requirements/tests.in
 babel==2.16.0
     # via sphinx
-black==23.12.1
+black==24.8.0
     # via -r requirements/dev.in
 blinker==1.8.2
     # via
@@ -176,7 +176,7 @@ six==1.16.0
     # via flask-rest-jsonapi
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==7.4.7
+sphinx==8.0.2
     # via
     #   -r requirements/docs.in
     #   pallets-sphinx-themes
@@ -203,7 +203,7 @@ sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
 sqlalchemy==2.0.35
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.333
+sweetrpg-api-core==0.0.334
     # via -r requirements/pkg.in
 sweetrpg-db==0.0.141
     # via
