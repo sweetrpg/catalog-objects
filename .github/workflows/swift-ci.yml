@@ -1,0 +1,73 @@
+
+name: Swift CI
+
+on:
+  push:
+    branches: [ "feature/swift" ]
+    paths:
+      - Sources
+      - Tests
+      - Package.swift
+
+jobs:
+
+  tests:
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    concurrency: swift-ci
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {
+              name: Linux,
+              swift: "5.7",
+              os: ubuntu-latest,
+            }
+          - {
+              name: macOS,
+              swift: "5.7",
+              os: macos-latest,
+            }
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
+
+  docs:
+    needs: [tests]
+    runs-on: ubuntu-latest
+    concurrency: docs
+    steps:
+      - uses: actions/checkout@v4
+
+  publish:
+    needs: [tests]
+    runs-on: ubuntu-latest
+    concurrency: publish
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+  notify:
+    needs: [publish]
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - repo: catalog-api
+          - repo: catalog-data-processor
+          - repo: catalog-web
+          - repo: client
+    steps:
+      - name: Notify
+        uses: juztcode/repo-ditpatch-action@v1
+        with:
+          event-type: catalog-objects-published
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          repository: sweetrpg/${{ matrix.repo }}
