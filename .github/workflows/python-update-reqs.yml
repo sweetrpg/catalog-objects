@@ -1,4 +1,6 @@
-name: Update Requirements
+name: Update Python Requirements
+
+concurrency: update-python-reqs
 
 on:
     workflow_dispatch:
