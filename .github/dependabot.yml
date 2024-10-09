@@ -5,17 +5,17 @@
 
 version: 2
 updates:
-    - package-ecosystem: "pip" # See documentation for possible values
-      directory: "/" # Location of package manifests
-      schedule:
-          interval: "weekly"
-      open-pull-requests-limit: 5
-      assignees:
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+    interval: "weekly"
+    open-pull-requests-limit: 5
+    assignees:
       - "paulyhedral"
-    - package-ecosystem: "swift" # See documentation for possible values
-      directory: "/" # Location of package manifests
-      schedule:
-          interval: "weekly"
-      open-pull-requests-limit: 5
-      assignees:
+  - package-ecosystem: "swift" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+    interval: "weekly"
+    open-pull-requests-limit: 5
+    assignees:
       - "paulyhedral"
