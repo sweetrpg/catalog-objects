@@ -1,5 +1,7 @@
 name: Python CI
 
+concurrency: python-ci
+
 on:
   push:
     branches: [develop]
@@ -19,7 +21,6 @@ jobs:
   tests:
     name: ${{ matrix.name }}
     runs-on: ${{ matrix.os }}
-    concurrency: python-ci
     strategy:
       fail-fast: false
       matrix:
