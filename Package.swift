@@ -6,14 +6,15 @@ import PackageDescription
 let package = Package(
     name: "CatalogObjects",
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "CatalogObjects",
             targets: ["CatalogObjects"]),
     ],
+    dependencies: [
+        .package(url: "git@github.com:sweetrpg/model-core.git", branch: "feature/swift"),
+        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
+    ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "CatalogObjects",
             dependencies: ["ModelCore"]),
@@ -21,8 +22,5 @@ let package = Package(
             name: "CatalogObjectsTests",
             dependencies: ["CatalogObjects"]
         ),
-    ],
-    dependencies: [
-        .package(url: "git@github.com:sweetrpg/model-core.git", branch: "feature/swift"),
     ]
 )
