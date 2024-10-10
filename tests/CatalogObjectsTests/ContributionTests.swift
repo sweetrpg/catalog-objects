@@ -1,6 +1,6 @@
 import Testing
-@testable import CatalogObjects
+@testable import Contribution
 
-@Test func example() async throws {
+@Test func serialize() async throws {
     // Write your test here and use APIs like `#expect(...)` to check expected conditions.
 }
