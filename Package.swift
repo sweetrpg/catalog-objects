@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .target(
             name: "CatalogObjects",
-            dependencies: ["ModelCore"]),
+            dependencies: [.product(name: "ModelCore", package: "model-core")]),
         .testTarget(
             name: "CatalogObjectsTests",
             dependencies: ["CatalogObjects"]
