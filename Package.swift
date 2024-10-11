@@ -11,7 +11,7 @@ let package = Package(
             targets: ["CatalogObjects"]),
     ],
     dependencies: [
-        .package(url: "git@github.com:sweetrpg/model-core.git", branch: "feature/swift"),
+        .package(url: "https://github.com/sweetrpg/model-core.git", branch: "feature/swift"),
         .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
     ],
     targets: [
