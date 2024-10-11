@@ -1,3 +1,6 @@
+/**
+ */
+
 import Foundation
 import ModelCore
 
@@ -9,4 +12,6 @@ public struct Contribution {
     public let roles : [String]
 }
 
+/**
+ */
 extension Contribution : Auditable {}

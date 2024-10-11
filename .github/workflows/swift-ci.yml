@@ -51,9 +51,13 @@ jobs:
       run: |
             swift --version
     - name: Build
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
             swift build -v
     - name: Run tests
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
             swift test -v
 
