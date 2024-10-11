@@ -6,19 +6,15 @@ import ModelCore
 
 /**
  */
-public struct Contribution {
-    public let personId : URI
-    public let volumeId : URI
-    public let roles : [String]
-}
+public struct Contribution : Auditable {
+    public var personId : URL
+    public var volumeId : URL
+    public var roles : [String]
 
-/**
- */
-extension Contribution : Auditable {
-    public let createdAt : Date
-    public let createdBy : String
-    public let updatedAt : Date
-    public let updatedBy : String
-    public let deletedAt : Date?
-    public let deletedBy : String?
+    public var createdAt : Date
+    public var createdBy : URL
+    public var updatedAt : Date
+    public var updatedBy : URL
+    public var deletedAt : Date?
+    public var deletedBy : URL?
 }
