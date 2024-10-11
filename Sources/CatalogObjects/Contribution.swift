@@ -14,4 +14,11 @@ public struct Contribution {
 
 /**
  */
-extension Contribution : Auditable {}
+extension Contribution : Auditable {
+    public let createdAt : Date
+    public let createdBy : String
+    public let updatedAt : Date
+    public let updatedBy : String
+    public let deletedAt : Date?
+    public let deletedBy : String?
+}
