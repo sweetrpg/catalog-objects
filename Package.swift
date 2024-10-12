@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "CatalogObjects",
+    platforms: [
+       .macOS(.v13),
+    ],
     products: [
         .library(
             name: "CatalogObjects",
@@ -17,10 +20,17 @@ let package = Package(
     targets: [
         .target(
             name: "CatalogObjects",
-            dependencies: [.product(name: "ModelCore", package: "model-core")]),
+            dependencies: [.product(name: "ModelCore", package: "model-core")],
+            swiftSettings: swiftSettings),
         .testTarget(
             name: "CatalogObjectsTests",
-            dependencies: ["CatalogObjects"]
-        ),
-    ]
+            dependencies: ["CatalogObjects"],
+            swiftSettings: swiftSettings),
+    ],
+    swiftLanguageModes: [.v5]
 )
+
+var swiftSettings: [SwiftSetting] { [
+    .enableUpcomingFeature("DisableOutwardActorInference"),
+    .enableExperimentalFeature("StrictConcurrency"),
+] }
