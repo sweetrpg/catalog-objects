@@ -1,10 +1,12 @@
-import XCTest
+import Testing
 import Foundation
 @testable import ModelCore
 
-final class ContributionTests : XCTestCase {
+@Suite("Test Contribution object", .serialized)
+struct ContributionTests {
 
-    func testSerialize() throws {
+    @Test("Serialization")
+    func serialize() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.
     }
 }
