@@ -3,7 +3,7 @@
     "image": "swift:6.0",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
-            "installZsh": "false",
+            "installZsh": "true",
             "username": "vscode",
             "userUid": "1001",
             "userGid": "1001",
@@ -13,7 +13,12 @@
             "version": "os-provided",
             "ppa": "false"
 		},
-		"ghcr.io/devcontainers/features/github-cli:1": {}
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
+        "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+            "packages": "gnupg2,curl"
+        },
+        "ghcr.io/eitsupi/devcontainer-features/jq-likes:2": {}
     },
     "runArgs": [
         "--cap-add=SYS_PTRACE",
@@ -39,5 +44,13 @@
     // "forwardPorts": [],
 
     // Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-    "remoteUser": "vscode"
+    "remoteUser": "vscode",
+
+    "mounts": [
+        "source=${localEnv:HOME}/.kube,target=/home/vscode/.kube,type=bind"
+    ],
+
+    "containerEnv": {
+        "KUBECONFIG": "/home/vscode/.kube/psw-dev.config"
+    }
 }
