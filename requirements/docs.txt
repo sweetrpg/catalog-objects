@@ -14,7 +14,7 @@ blinker==1.8.2
     # via flask
 certifi==2024.8.30
     # via requests
-charset-normalizer==3.3.2
+charset-normalizer==3.4.0
     # via requests
 click==8.1.7
     # via
@@ -50,7 +50,7 @@ jinja2==3.1.4
     #   sphinx
 markdown-it-py==3.0.0
     # via rich
-markupsafe==3.0.0
+markupsafe==3.0.1
     # via
     #   jinja2
     #   werkzeug
@@ -106,7 +106,7 @@ six==1.16.0
     # via flask-rest-jsonapi
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==8.0.2
+sphinx==8.1.2
     # via
     #   -r requirements/docs.in
     #   pallets-sphinx-themes
@@ -115,7 +115,7 @@ sphinx==8.0.2
     #   sphinxcontrib-log-cabinet
 sphinx-issues==4.1.0
     # via -r requirements/docs.in
-sphinx-tabs==3.4.5
+sphinx-tabs==3.4.7
     # via -r requirements/docs.in
 sphinxcontrib-applehelp==2.0.0
     # via sphinx
@@ -133,9 +133,9 @@ sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
 sqlalchemy==2.0.35
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.334
+sweetrpg-api-core==0.0.336
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.142
+sweetrpg-db==0.0.143
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
