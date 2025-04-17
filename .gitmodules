@@ -1,0 +1,12 @@
+[submodule "swift"]
+	path = swift
+	url = git@github.com:sweetrpg/catalog-objects.swift.git
+[submodule "rust"]
+	path = rust
+	url = git@github.com:sweetrpg/catalog-objects.rs.git
+[submodule "go"]
+	path = go
+	url = git@github.com:sweetrpg/catalog-objects.go.git
+[submodule "python"]
+	path = python
+	url = git@github.com:sweetrpg/catalog-objects.py.git
